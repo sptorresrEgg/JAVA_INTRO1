@@ -53,7 +53,7 @@ public class Ejercicio5_clubSocial {
         case "c":
             System.out.println("Ingrese el costo del tratamiento : ");
             costotratamiento=leer.nextInt();
-            valorpagar=costotratamiento - (costotratamiento*0.35);
+            valorpagar=costotratamiento;
             System.out.println("El valor a pagar es :" + valorpagar);
             break;     
     }    

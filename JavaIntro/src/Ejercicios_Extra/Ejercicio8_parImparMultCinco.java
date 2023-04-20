@@ -27,8 +27,9 @@ public class Ejercicio8_parImparMultCinco {
         for (int i = 0; i < cantidad; i++) {
             System.out.println("Ingrese el numero " +(i+1) );
             numero = leer.nextInt();
-            if(numero==0){
+            if(numero<1){
                 i--;
+                continue;
             }
             else {
                 int modulo5=numero%5;

@@ -38,6 +38,8 @@ public class Ejercicio7_maximoMinimoPromedio {
              
              if(num<1){
                 cont--;
+                continue;
+                
              }  
             
                 max =   Math.max(max,num);
