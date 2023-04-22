@@ -140,12 +140,12 @@ matrizP[2][2]=26;*/
          Scanner leer = new Scanner(System.in).useDelimiter("/n");
          for (int i = 0; i < 10; i++) {
              for (int j = 0; j < 10; j++) {
-                 matrizM[i][j]= (int) (Math.random()*10);
+                 matrizM[i][j]= (int) (Math.random()*1);
              }
         }
         for (int i = 0; i < 3; i++) {
              for (int j = 0; j < 3; j++) {
-                 matrizP[i][j]= (int) (Math.random()*10);
+                 matrizP[i][j]= (int) (Math.random()*1);
              }
         } 
     }
