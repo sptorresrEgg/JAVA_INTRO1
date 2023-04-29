@@ -16,6 +16,7 @@ public class ServiciosLibro {
     Scanner leer = new Scanner(System.in).useDelimiter("\n");  
     
     public  Libro crearLibro(){
+        
         System.out.println("Ingrese el ISBN");
         String ISBN = leer.next();
         System.out.println("Ingrese Titulo");
@@ -24,7 +25,6 @@ public class ServiciosLibro {
         String autor = leer.next();
         System.out.println("Ingrese Numero paginas");
         int paginas = leer.nextInt();
-        
         return new Libro(ISBN, titulo, autor, paginas);
     }
     
