@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package guia8_ejer4_cuenta;
+package main;
 
 import Entidad.Cuenta;
 import Servicios.ServiciosCuenta;
@@ -13,7 +13,7 @@ import java.util.Scanner;
  *
  * @author sptorresr
  */
-public class Guia8_Ejer4_Cuenta {
+public class Main {
 
     /**
      * @param args the command line arguments

@@ -4,14 +4,14 @@
  * and open the template in the editor.
  */
 
-package guia8_ejer4_rectangulo;
+package main;
 import Entidad.Rectangulo;
 import Servicios.ServiciosRectangulo;
 
 /**
 
  */
-public class Guia8_Ejer4_Rectangulo {
+public class Main {
 
     
     public static void main(String[] args) {

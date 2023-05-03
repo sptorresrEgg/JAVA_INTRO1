@@ -4,14 +4,14 @@
  * and open the template in the editor.
  */
 
-package guia8_ejer3_operaciones;
+package main;
 import Entidad.Operacion;
 import Servicios.ServiciosOperaciones;
 import java.util.Scanner;
 /**
  
  */
-public class Guia8_Ejer3_Operaciones {
+public class Main {
 
     
     public static void main(String[] args) {

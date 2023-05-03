@@ -4,14 +4,14 @@
  * and open the template in the editor.
  */
 
-package guia8_ejer2_circunferencia;
+package main;
 import Entidad.Circunferencia;
 import java.util.Scanner; 
 import servicioCircunferencia.serviciosCircunferencia;
 /**
  
  */
-public class Guia8_Ejer2_Circunferencia {
+public class Main {
 
     
     public static void main(String[] args) {

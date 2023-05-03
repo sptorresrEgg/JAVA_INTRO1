@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package guia8_ejer6_nespresso;
+package main;
 import Entidad.Cafetera;
 import Servicios.ServiciosCafetera;
 import java.util.*;
@@ -11,7 +11,7 @@ import java.util.*;
  *
  * @author sptorresr
  */
-public class Guia8_Ejer6_Nespresso {
+public class Main {
 
     /**
      * @param args the command line arguments
