@@ -5,7 +5,8 @@
  */
 package main;
 
-import servicios.ServiciosFecha;
+import entidad.Isosceles;
+import servicios.ServiciosIsosceles;
 
 /**
  *
@@ -18,12 +19,12 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        ServiciosFecha sf = new ServiciosFecha();
-        sf.crearFecha();
-        sf.CantidadDias();
-        sf.diaAnterior();
-        sf.diaPosterior();
-        
+        ServiciosIsosceles si = new ServiciosIsosceles();
+        Isosceles i1 = new Isosceles();
+        si.crear();
+       si.calcularArea();
+       si.calcularPerimetro();
+       si.areaMayor();
     }
     
 }

@@ -5,8 +5,6 @@
  */
 package main;
 
-import servicios.ServiciosFecha;
-
 /**
  *
  * @author sptorresr
@@ -18,12 +16,6 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        ServiciosFecha sf = new ServiciosFecha();
-        sf.crearFecha();
-        sf.CantidadDias();
-        sf.diaAnterior();
-        sf.diaPosterior();
-        
     }
     
 }
