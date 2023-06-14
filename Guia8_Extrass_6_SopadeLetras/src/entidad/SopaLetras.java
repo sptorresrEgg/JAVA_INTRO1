@@ -45,6 +45,6 @@ public class SopaLetras {
     public String toString() {
         return "SopaLetras{" + "sopaletras=" + sopaletras + ", palabra=" + palabra + '}';
     }
-      
+      | 
     
 }
