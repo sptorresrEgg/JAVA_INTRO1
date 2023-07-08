@@ -4,33 +4,27 @@
  * and open the template in the editor.
  */
 package main;
-
-import entidad.Paises;
-import java.util.ArrayList;
-import java.util.HashSet;
-import servicios.ServiciosPaises;
-import java.lang.String;
+import entidad.*;
 
 /**
  *
  * @author sptorresr
  */
-public class main {
+public class Main {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-
-        ServiciosPaises sp = new ServiciosPaises();
-        HashSet<String> listaPaises = sp.crearListaPaises();
-        sp.mostrarPaises(listaPaises);
-        sp.eliminarPaises(listaPaises);
-        sp.mostrarPaises(listaPaises);
+        //Lavadora lav1 = new Lavadora();
+        //lav1.crearLavadora();
+        //lav1.precioFinal();
         
+        Televisor tv1 = new Televisor();
+        tv1.crearTelevisor();
+        tv1.precioFinal();
         
-
     }
-
+    
 }

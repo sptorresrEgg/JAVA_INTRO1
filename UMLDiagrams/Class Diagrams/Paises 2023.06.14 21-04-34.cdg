@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Paises">
+  <ClassDiagramComponents>
+    <Class name="Paises" package="entidad" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="nombrePais" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombrePais"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombrePais" returnType="String" visibility="public"/>
+        <Method name="setNombrePais" returnType="void" visibility="public">
+          <Argument type="String" name="nombrePais"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
