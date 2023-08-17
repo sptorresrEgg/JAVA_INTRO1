@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Guia11_EjerEx1_AlquilerAmarres">
+  <ClassDiagramComponents>
+    <Class name="AlquilerAmarre" package="entidad" visibility="public" xPosition="97.0" yPosition="20.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="Dni" type="int" visibility="private"/>
+        <Field name="barco" type="Barco" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Barco" package="entidad" visibility="public" xPosition="108.0" yPosition="332.0">
+      <Fields>
+        <Field name="matricula" type="int" visibility="protected"/>
+        <Field name="eslora" type="double" visibility="protected"/>
+        <Field name="yearFabricacion" type="int" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="matricula"/>
+          <Argument type="double" name="eslora"/>
+          <Argument type="int" name="yearFabricacion"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getMatricula" returnType="int" visibility="public"/>
+        <Method name="setMatricula" returnType="void" visibility="public">
+          <Argument type="int" name="matricula"/>
+        </Method>
+        <Method name="getEslora" returnType="double" visibility="public"/>
+        <Method name="setEslora" returnType="void" visibility="public">
+          <Argument type="double" name="eslora"/>
+        </Method>
+        <Method name="getYearFabricacion" returnType="int" visibility="public"/>
+        <Method name="setYearFabricacion" returnType="void" visibility="public">
+          <Argument type="int" name="yearFabricacion"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="BarcoMotor" package="entidad" visibility="public" xPosition="265.0" yPosition="20.0">
+      <Fields>
+        <Field name="potencia" type="int" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="potencia"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="int" name="potencia"/>
+          <Argument type="int" name="matricula"/>
+          <Argument type="double" name="eslora"/>
+          <Argument type="int" name="yearFabricacion"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getPotencia" returnType="int" visibility="public"/>
+        <Method name="setPotencia" returnType="void" visibility="public">
+          <Argument type="int" name="potencia"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Velero" package="entidad" visibility="public" xPosition="696.0" yPosition="350.0">
+      <Fields>
+        <Field name="cantidadMastiles" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="cantidadMastiles"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="int" name="cantidadMastiles"/>
+          <Argument type="int" name="matricula"/>
+          <Argument type="double" name="eslora"/>
+          <Argument type="int" name="yearFabricacion"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCantidadMastiles" returnType="int" visibility="public"/>
+        <Method name="setCantidadMastiles" returnType="void" visibility="public">
+          <Argument type="int" name="cantidadMastiles"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Yate" package="entidad" visibility="public" xPosition="778.0" yPosition="20.0">
+      <Fields>
+        <Field name="cantidadCamarotes" type="int" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="cantidadCamarotes"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="int" name="cantidadCamarotes"/>
+          <Argument type="int" name="potencia"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="int" name="cantidadCamarotes"/>
+          <Argument type="int" name="potencia"/>
+          <Argument type="int" name="matricula"/>
+          <Argument type="double" name="eslora"/>
+          <Argument type="int" name="yearFabricacion"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCantidadCamarotes" returnType="int" visibility="public"/>
+        <Method name="setCantidadCamarotes" returnType="void" visibility="public">
+          <Argument type="int" name="cantidadCamarotes"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Main" package="main" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="entidad.BarcoMotor" target="entidad.Barco"/>
+    <IsRelation name="is" source="entidad.Velero" target="entidad.Barco"/>
+    <IsRelation name="is" source="entidad.Yate" target="entidad.BarcoMotor"/>
+    <HasRelation name="barco" source="entidad.AlquilerAmarre" target="entidad.Barco" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

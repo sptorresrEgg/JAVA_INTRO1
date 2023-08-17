@@ -5,12 +5,14 @@
  */
 package entidad;
 
+import interfaces.calculosFormas;
+
 /**
  Área circulo: PI * radio ^ 2 / Perímetro circulo: PI * diámetro.
  */
-public class Circulo {
+public class Circulo implements calculosFormas{
     private int radio;
-    private int perimetro = 2*radio;
+    
 
     public Circulo() {
     }
@@ -27,17 +29,26 @@ public class Circulo {
         this.radio = radio;
     }
 
-    public int getPerimetro() {
-        return perimetro;
-    }
-
-    public void setPerimetro(int perimetro) {
-        this.perimetro = perimetro;
-    }
+    
 
     @Override
     public String toString() {
-        return "Circulo{" + "radio=" + radio + ", perimetro=" + perimetro + '}';
+        return "Circulo{" + "radio=" + radio  + '}';
+    }
+
+    @Override
+    public void calcularArea() {
+        //Área circulo: PI * radio ^ 2 / Perímetro circulo: PI * diámetro.
+        double area;
+        area = pi*Math.pow(radio, 2);
+        System.out.println("El area del circulo es : " + area);
+    }
+
+    @Override
+    public void calcularPerimetro() {
+        double perimetro;
+        perimetro=pi*(radio+radio);
+        System.out.println("El perimetro del circulo es : "+ perimetro);
     }
     
     

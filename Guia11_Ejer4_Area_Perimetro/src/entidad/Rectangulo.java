@@ -5,11 +5,13 @@
  */
 package entidad;
 
+import interfaces.calculosFormas;
+
 /**
  *
  * @author sptorresr
  */
-public class Rectangulo {
+public class Rectangulo implements calculosFormas {
     private int base;
     private int altura;
 
@@ -41,5 +43,21 @@ public class Rectangulo {
     public String toString() {
         return "Rectangulo{" + "base=" + base + ", altura=" + altura + '}';
     }
+
+    @Override
+    public void calcularArea() {
+        //Área rectángulo: base * altura / 
+        int area;
+         area = base*altura;
+        System.out.println("El area del circulo es : " + area);
+    }    
+    @Override
+    public void calcularPerimetro() {
+       //Perímetro rectángulo: (base + altura) * 2.
+       int perimetro;
+       perimetro = (base + altura) * 2;
+       System.out.println("El perimetro del circulo es : "+ perimetro);
+    } 
+    
     
 }
